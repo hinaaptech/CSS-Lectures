@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquery.js"></script>
+
+<style>
+body{
+	background:#3CC;
+}
+/*
+#main
+{
+	width:100%;
+	height:900px;
+	margin:0;
+	background-color:#CC9;
+}
+*/
+.popup{
+	background-color:#63F;
+	position:absolute;
+	margin-top:550px;
+	width:0%;
+	height:0px;
+	margin-left:20%;
+	}
+	
+div{
+	
+	background:#069;
+	height:0%;
+	width:0%;
+	position:absolute;
+	margin:200px;
+}
+
+
+
+</style>
+<script>
+
+$(document).ready(function() {
+    $(".popup").animate(
+	{height:"500px",
+	width:"50%",marginLeft:"30%",marginTop:"60px"},3000)
+	
+$("#close").click(function(){
+	$(".popup").fadeOut(1000);
+	})
+	
+	
+	
+	
+		
+		})
+</script>
+</head>
+<body>
+
+<div>
+<a href="#" ><img src="" /> </a>
+
+<p>skauheu </p>
+<img src="" />
+
+</div>
+
+
+<div class="popup" id="popup">
+ <a href="http://www.google.com/"><img src="https://images7.alphacoders.com/686/686386.jpg" height="300px" width="300px" /></a>
+ <p> some textsome textsome textsome text </p>
+<img id="close" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-window-close-icon.png" width="20px" height="20px"/>
+</div>
+
+</body>
+</html>
